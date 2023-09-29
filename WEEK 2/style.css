@@ -195,3 +195,10 @@ footer p {
     position:sticky;  /* navigation bar stickys to the top when web page is scrolled */
     top:0px;
 }
+
+/* Highlights the currently active page */
+a:is(:link, :active).current-page {
+background-color:  white;  /* changes background to white*/
+color:  black;   /* changes text to black*/
+font-weight: bold;    /* makes text bold*/
+}
