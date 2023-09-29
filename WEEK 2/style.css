@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Inter Tight;  /* New font for website content */
     color: #505050;
 }
 
@@ -16,6 +16,8 @@ header {
 
 .headeraH1 {
     margin: 0;
+    font-family: Tilt Prism;   /* New font for website header */
+    font-size: 40px;
 }
 
 .banner {
