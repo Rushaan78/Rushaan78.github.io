@@ -103,8 +103,8 @@ main h3 {
 }
 
 .service-column {
-    flex-basis: calc(25% - 20px);
-    max-width: calc(25% - 20px);
+    flex-basis: calc(50% - 20px); /* changed percentage to accommodate 2 pictures in one row */
+    max-width: calc(50% - 20px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,13 +112,16 @@ main h3 {
 }
 
 .service-column img {
-    width: 180px;
+    width: 250px;
     height: auto;
+    margin-top: 15px;  /* added top margin fop better spacing*/
     margin-bottom: 10px;
 }
 
 .service-column h3 {
     margin-bottom: 5px;
+    text-decoration: underline;  /* added text decoration*/
+    text-decoration-color: white;
 }
 
 /* Media Queries for Responsiveness */
@@ -220,3 +223,4 @@ font-weight: bold;    /* makes text bold*/
     font-size: 19px;  /* changed font size */
     font-weight: bold;  /* changed font weight */
 }
+
