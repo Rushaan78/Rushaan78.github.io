@@ -187,3 +187,9 @@ footer a:hover {
 footer p {
     margin: 10px 0 0;
 }
+
+/* Implements sticky header on all the website pages */
+.sticky-header{
+    position:sticky;  /* navigation bar stickys to the top when web page is scrolled */
+    top:0px;
+}
