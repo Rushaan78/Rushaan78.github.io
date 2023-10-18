@@ -336,6 +336,32 @@ arrows) */
     background-color: #5A2A27;
 }
 
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
 /* Style for the form: setting width, auto margin for centering, padding, 
 background color, border radius for rounded corners, and font size */
 #form {
