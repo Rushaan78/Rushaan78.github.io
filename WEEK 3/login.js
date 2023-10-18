@@ -91,3 +91,21 @@ function confirmedPassword() {
         textCP.style.color = "#8b0000";
     }
 }
+
+//to validate the entire form (evaluates correctly and submits if necessary)
+function validateForm() {
+    var username = document.getElementById("name");  //variable declarations
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+    var confirmed = document.getElementById("cPassword");
+    var correctFormat = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if ( username.value && email.value.match(correctFormat) && password.value.length >= 8 && confirmed.value === password.value ) {  //if all the conditions are met
+        return true;  //submits the form
+    }
+
+    else {
+        alert("Please Fill In All Fields As Per The Requirements.");   //prompts user to fill in all the boxes correctly
+        return false;  //form does not submit
+    }
+}
