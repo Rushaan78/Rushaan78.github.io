@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust Voyages | Travel Agency</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="login.js"></script>
+    <!-- Link for Google Font Stylesheet -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Tilt+Prism&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Main Container -->
+    <div>
+        <div class="sticky-header">
+            <!-- Header Section -->
+            <header>
+                <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
+            </header>
+
+            <!-- Navigation Section -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tasks.html">Tasks</a></li>
+                    <li><a class="current-page" href="login.html">Login</a></li>  <!-- Highlights current page -->
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content Section -->
+        <main class="services" id="services-contact">
+           
+            <form id="form" method="post" action="#">
+                <h1>Login</h1><br>
+          <div class="input-control">
+                <label for="name">Username:</label>
+                <input type="text"  id="name" name="name" onkeyup=" validateUsername()"/>   <!--calls javascript function-->
+                <span id="textU"></span>  <!--displays the prompt for the user-->
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" onkeyup="validateEmail()"/>  <!--calls javascript function-->
+                <span id="textE"></span>  <!--displays the prompt for the user-->
+
+                <label for="password">Password:</label>
+                <input type="password"  id="password" name="password" onkeyup="validatePassword()"/>  <!--calls javascript function-->
+                <span id="textP"></span>  <!--displays the prompt for the user-->
+
+                 <label for="password">Confirm Password:</label>
+                <input type="password"  id="cPassword" name="password" onkeyup="confirmedPassword()"/>  <!--calls javascript function-->
+                <span id="textCP"></span>  <!--displays the prompt for the user-->
+            </div>
+
+                <button type="submit">Login</button>  <!--login button-->
+
+            </form>
+
+            <section class="cta-container">
+                <h2>Ready to Experience Our Services?</h2>
+                <p>Join us today and discover the difference we can make for you!</p>
+                <a href="contact.html" class="cta-button">Contact Us Now</a>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <ul>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://twitter.com/">Twitter</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+            <p>
+                &copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
