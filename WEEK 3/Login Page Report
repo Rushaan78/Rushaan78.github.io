@@ -14,10 +14,10 @@ This technical flaw necessitated the introduction of an additional if-else block
 
 Visual Feedback for Input Fields
 Another concern was the visual feedback provided to users when they interacted with input fields. If a user clicked on an input-box, added no text, and subsequently clicked on another input-box, the previous one would still be marked as invalid (typically highlighted in red). This created an unsatisfactory user experience.
- To resolve this, an if-statement was introduced to reset the input box's appearance to its default settings if it contained no text.
+To resolve this, an if-statement was introduced to reset the input box's appearance to its default settings if it contained no text.
 
 Form Submission Control
- A major issue that demanded attention was the behavior of the submit button. The website would reload regardless of whether all input-boxes contained valid inputs or not, potentially leading to data loss and an undesirable user experience. Initially, I explored the idea of disabling the submit button until all requirements were met, but this proved to be impractical.
- A more effective solution involved the integration of a separate function that would only allow the form to submit when all requirements were satisfied. If a user attempted to submit the form without meeting these criteria, an alert pop-up would be displayed, informing them that all requirements needed to be met.
+A major issue that demanded attention was the behavior of the submit button. The website would reload regardless of whether all input-boxes contained valid inputs or not, potentially leading to data loss and an undesirable user experience. Initially, I explored the idea of disabling the submit button until all requirements were met, but this proved to be impractical.
+A more effective solution involved the integration of a separate function that would only allow the form to submit when all requirements were satisfied. If a user attempted to submit the form without meeting these criteria, an alert pop-up would be displayed, informing them that all requirements needed to be met.
 
- The integration of JavaScript into my website's login page has been a significant step towards enhancing user experience and reinforcing security. Despite the challenges encountered during this project, I have successfully addressed each issue to create a robust and user-friendly login page, proving to highlight the importance of meticulous problem-solving in achieving project goals.
+The integration of JavaScript into my website's login page has been a significant step towards enhancing user experience and reinforcing security. Despite the challenges encountered during this project, I have successfully addressed each issue to create a robust and user-friendly login page, proving to highlight the importance of meticulous problem-solving in achieving project goals.
