@@ -1,13 +1,15 @@
-The primary goal of this project was to create a user-friendly image gallery using a combination of HTML, CSS, and JavaScript. While the objective was clear, the development process presented its fair share of challenges, necessitating careful debugging and iterative problem-solving
+The primary objective of this project was to develop a user-friendly image gallery utilizing HTML, CSS, and JavaScript. This report highlights my approach to the project, the challenges encountered during its development, and the strategies employed to overcome them.
+
+My Approach:
+My development approach was structured and systematic to ensure the creation of a robust image gallery. I initially established a comprehensive HTML and CSS layout to guarantee a consistent appearance with correct image dimensions. This served as a foundation before delving into JavaScript as I recognized that starting with JavaScript code prematurely would lead to layout instability and image display issues.
 
 Mistakes/Challenges I faced and how I overcame them:
-
 Starting with JavaScript Code
-One of my initial mistakes was to jump straight into JavaScript coding without first considering the HTML and CSS layout of the gallery. This hasty approach resulted in a constantly shifting layout, and the images weren't displayed in the correct dimensions. These issues created unnecessary complications that needed to be addressed.
+One of my initial mistakes was to jump straight into JavaScript coding without first considering the HTML and CSS layout of the gallery. This hasty approach resulted in a constantly shifting layout, where the images weren't displayed in the correct dimensions and the buttons continuously displaced from their position. These issues created unnecessary complications that needed to be addressed.
 To address the layout and image dimension issues, I reorganized the development process. The project commenced with a comprehensive HTML and CSS layout for the gallery, where I set a standard size for the images in CSS, ensuring that the images were displayed correctly and consistently.
 
 Lack of Clarity on Bounds
-Both JavaScript functions were partially functional, but a lack of clarity regarding bounds was a significant issue. Upon loading the site, it was blank, and the first slide only appeared when I clicked the "Next" button. This was a usability flaw that required careful consideration to resolve. To address the issue of the gallery not displaying the first image upon loading, I added a third "if statement" (First being when user clicks "prev" and second being when user clicks "next") to load the first image when the "Gallery" link was clicked in the navigation bar. Initially, this appeared to solve the problem, but it introduced a new issue, where the picture would only load for a few seconds before disappearing.
+Both JavaScript functions were partially functional, but a lack of clarity regarding bounds was a significant issue. Upon loading the site, it was blank, and the first slide only appeared when I clicked the "Next" button. This was a usability flaw that required careful consideration to resolve. To address the issue of the gallery not displaying the first image upon loading, I added a third "if statement" (first being when user clicks "prev" and second being when user clicks "next") to load the first image when the "Gallery" link was clicked in the navigation bar. Initially, this appeared to solve the problem, but it introduced a new issue, where the picture would only load for a few seconds before disappearing.
 While I tried to fix this issue with JavaScript, upon reviewing the CSS, I noticed that all the slides were hidden by default. Hence, I added an ID to the first image and changed its visibility (e.g., display: block;), ensuring that the first image was correctly displayed and didn't disappear unexpectedly.
 
 Maintenance Challenges
