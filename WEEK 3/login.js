@@ -101,6 +101,7 @@ function validateForm() {
     var correctFormat = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
     if ( username.value && email.value.match(correctFormat) && password.value.length >= 8 && confirmed.value === password.value ) {  //if all the conditions are met
+        alert("You Have Successfully Logged-In!"); //alerts user that log-in is completed
         return true;  //submits the form
     }
 
