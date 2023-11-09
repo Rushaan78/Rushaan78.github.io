@@ -17,7 +17,7 @@ whenClicked.addEventListener("click", function () {   //when button is clicked
   fetch(APIURL)  //making an HTTP request to OpenWeatherMap API
     .then((response) => {  
       if (!response.ok) {  //checks if the response is not okay 
-        throw new Error("Not a Vlid City. Please enter a new one");  //throw an error for invalid city
+        throw new Error("Not a Valid City. Please enter a new one");  //throw an error for invalid city
       }
       return response.json();   //returns the parsed JSON response
     })
@@ -42,7 +42,7 @@ whenClicked.addEventListener("click", function () {   //when button is clicked
     })
 
     .catch((error) => {  //handles errors
-      if (error.message === "City not found") {   //if city is not found
+        if (error.message === "Not a Valid City. Please enter a new one") {   //if city is not found
         alert("City not found. Please enter a new city name.");  //alerts the user that city is not found, and prompts them to enter a new one
       } else {
         console.error("An error occurred:", error);   //if an error occurs for reasons other than a city not being found, it logs the error to the console
