@@ -14,16 +14,14 @@ T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="a
     <nav>
         <h1>User Authentication System With Node and Mysql</h1>
         <ul>
-
             <li><a href="/">Home</a></li>
             <li><a href="/signup">SignUp</a></li>
-            <li><a href="/login">Login</a></li>
         </ul>
     </nav>
 
     <div class="container mt-4">
 
-        <form>
+        <form action="/auth/login" method="POST">   <!--form-->
             <div class="mb-3">
                 <form>
 
@@ -37,8 +35,14 @@ T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="a
                         <input type="password" class="form-control" id="password" name="password">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Login</button>
                 </form>
             </div>
+            {{#if message}}  <!--displays appropriate error message-->
+            <h4 class="alert alert-danger mt-4">{{message}}</h4>
+            {{/if}}
+
     </div>
-    </body></html>
+</body>
+
+</html>

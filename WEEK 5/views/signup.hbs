@@ -20,9 +20,10 @@ T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="a
         </ul>
     </nav>
 
+
     <div class="container mt-4">
 
-        <form>
+        <form action="/auth/signup" method="POST"> <!--form-->
             <div class="mb-3">
                 <form>
                     <div class="mb-3">
@@ -45,7 +46,11 @@ T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="a
                         <input type="password" class="form-control" id="passwordConfirmed" name="passwordConfirmed">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">SignUp</button>
                 </form>
             </div>
+           {{#if message}}  <!--displays appropriate error message-->
+    <h4 class="alert alert-danger mt-4">{{message}}</h4>
+{{/if}}
+
     </div></body></html>
